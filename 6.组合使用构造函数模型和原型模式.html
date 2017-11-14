@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+//	组合形式的模式，构造函数模式用于定义实例属性，而原型模式用于定义方法和共享的属性
+
+function Person(name,age){
+	this.name=name;
+	this.age=age;
+}
+
+Person.prototype={
+	constructor:Person,
+	sayName::function(){
+		alert(this.name);
+	}
+}
+</script>
